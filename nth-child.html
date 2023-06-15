@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-13</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nth-child.css">
+</head>
+
+<body class="page-nth-child">
+    <main>
+        <div class="container">
+         
+
+            <h1>CSS псевдокласс :nth-child</h1>
+            <div class="nth-example">
+                <h2 class="nth-example-title">:first-child</h2>
+                <h5 class="nth-example-subtitle">Первый</h5>
+                <div class="nth-example-row first-child">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+            <div class="nth-example">
+                <h2 class="nth-example-title">:last-child</h2>
+                <h5 class="nth-example-subtitle">Последний</h5>
+                <div class="nth-example-row last-child">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+            <div class="nth-example">
+                <h2 class="nth-example-title">:nth-child(odd)</h2>
+                <h5 class="nth-example-subtitle">Не чётные елементы</h5>
+                <div class="nth-example-row odd">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+
+            <div class="nth-example">
+                <h2 class="nth-example-title">:nth-child(even)</h2>
+                <h5 class="nth-example-subtitle">Чётные елементы</h5>
+                <div class="nth-example-row even">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+
+            <div class="nth-example">
+                <h2 class="nth-example-title">:nth-child(7)</h2>
+                <h5 class="nth-example-subtitle">7-й елементы</h5>
+                <div class="nth-example-row nth-child_7">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+            <div class="nth-example">
+                <h2 class="nth-example-title"> :nth-child(5n)</h2>
+                <h5 class="nth-example-subtitle">Каждый 5-й</h5>
+                <div class="nth-example-row nth-child_5n">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+            <div class="nth-example">
+                <h2 class="nth-example-title">:nth-child(3n+4)</h2>
+                <h5 class="nth-example-subtitle">Каждый третий, начиная с 4-го</h5>
+                <div class="nth-example-row nth-child_3n+4">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+            <div class="nth-example">
+                <h2 class="nth-example-title">:nth-child(-n+7)</h2>
+                <h5 class="nth-example-subtitle">Первых семь елементов</h5>
+                <div class="nth-example-row nth-child_-n+7">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+            <div class="nth-example">
+                <h2 class="nth-example-title">:nth-child(n)</h2>
+                <h5 class="nth-example-subtitle">Каждый</h5>
+                <div class="nth-example-row n">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+
+            <h2>Обращение к силектору, разнообразие методов.</h2>
+
+            <div class="nth-example">
+                <h2 class="nth-example-title">Универсальный селектор *</h2>
+                <h5 class="nth-example-subtitle">Обращается ко всем елем. на стр.</h5>
+
+            </div>
+
+            <div class="nth-example star">
+                <h2 class="nth-example-title"> .star * { color: blue; }</h2>
+                <h5 class="nth-example-subtitle">Обращается ко всем елем. селектора .star</h5>
+                <div class="nth-example-row">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+
+            <div class="nth-example pluse">
+                <h2 class="nth-example-title"> h6 + strong {
+                    color: red;
+                    }</h2>
+                <h5 class="nth-example-subtitle">Обращается к след. соседнему елем. strong который лежит после h6</h5>
+                <div class="nth-example-row">
+                    <div>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid,
+                            exercitationem.</strong>
+
+                        <h6>Lorem, ipsum dolor.</h6>
+                        <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid,
+                            exercitationem.</strong>
+
+                        <h5>Lorem, ipsum dolor.</h5>
+                        <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid,
+                            exercitationem.</strong>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nth-example all-current-selector">
+                <h2 class="nth-example-title">.nth-example-row .test</h2>
+                <h5 class="nth-example-subtitle">
+               
+
+                    <div>
+                        .nth-example-row .test {
+                        border: 1px solid red;
+                        padding: 20px;
+                        }
+                    </div>
+
+                </h5>
+                <div class="nth-example-row">
+                    <div class="test">
+                        <ul>
+                            <li class="test">1</li>
+                            <li class="test">2</li>
+                            <li class="test">3</li>
+                            <li class="test">4</li>
+                            <li class="test">5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nth-example">
+                <h2 class="nth-example-title">.nth-example-row > .test</h2>
+                <h5 class="nth-example-subtitle">
+                        .nth-example-row > .test {
+                        border: 1px solid red;
+                        padding: 20px;
+                        }
+                </h5>
+                <div class="nth-example-row">
+                    <div class="test">
+                        <ul>
+                            <li class="test">1</li>
+                            <li class="test">2</li>
+                            <li class="test">3</li>
+                            <li class="test">4</li>
+                            <li class="test">5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          
+
+
+            <div class="nth-example star">
+                <h2 class="nth-example-title"> .star * { color: blue; }</h2>
+                <h5 class="nth-example-subtitle">Обращается ко всем елем. селектора .star</h5>
+                <div class="nth-example-row">
+                    <div class="nth-example-row__item">1</div>
+                    <div class="nth-example-row__item">2</div>
+                    <div class="nth-example-row__item">3</div>
+                    <div class="nth-example-row__item">4</div>
+                    <div class="nth-example-row__item">5</div>
+                    <div class="nth-example-row__item" aria-controls="collapseOne">6</div>
+                    <div class="nth-example-row__item">7</div>
+                    <div class="nth-example-row__item">8</div>
+                    <div class="nth-example-row__item">9</div>
+                    <div class="nth-example-row__item">10</div>
+                    <div class="nth-example-row__item">11</div>
+                    <div class="nth-example-row__item">12</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

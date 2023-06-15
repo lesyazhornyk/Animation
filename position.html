@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-6</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/position.css">
+    <link rel="stylesheet" href="assets/css/flexbox.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>CSS position</h1>
+            <div class="example position">
+                <div class="example-title">
+                    <ul>
+                        <li>position: static;</li>
+                        <li>position: relative;</li>
+                        <li>position: absolute;</li>
+                        <li>position: fixed;</li>
+                        <li>position: sticky;</li>
+                    </ul>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                </div>
+            </div>
+
+            <div class="example position">
+                <div class="example-title">
+                    <ul>
+                        <li>position: relative;</li>
+                    </ul>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element relative">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                </div>
+            </div>
+
+            <div class="example absolute">
+                <div class="example-title">
+                    <ul>
+                        <li>position: absolute;</li>
+                    </ul>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element absolute">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                </div>
+            </div>
+
+
+            <div class="example relative-absolute">
+                <div class="example-title">
+                    <ul>
+                        <li>position: static;</li>
+                        <li>position: relative;</li>
+                        <li>position: absolute;</li>
+                    </ul>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div id="relative-absolute" class="flex-element">
+                        position: static;
+                        <div class="position-relative">
+                            <h3>position: relative;</h3>
+                            <div class="position-absolute">
+                                <h5>position: absolute;</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                </div>
+            </div>
+
+            <div class="example relative-absolute">
+                <div class="example-title">
+                    <ul>
+                        <li>position: static;</li>
+                        <li>position: relative;</li>
+                        <li>position: absolute;</li>
+                        <li>position: absolute;</li>
+                    </ul>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div id="relative-absolute" class="flex-element">
+                        position: static;
+                        <div class="position-relative">
+                            <h3>position: relative;</h3>
+                            <div class="position-absolute">
+                                <h5>position: absolute;</h5>
+                                <div class="position-absolute"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="example-title">
+                    <ul>
+                        <li>position: sticky;</li>
+                    </ul>
+                </div>
+                <ul class="list">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li class="sticky">5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li class="sticky">10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li class="sticky">15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li class="sticky">20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li class="sticky">25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li class="sticky">30</li>
+                </ul>
+            </div>
+
+           
+
+            <div class="example decoration">
+                <div class="example-title">
+                    <ul>
+                        <li>::after</li>
+                        <li>::before</li>
+                    </ul>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                </div>
+            </div>
+
+            <div class="example fixed">
+                <div class="example-title">
+                    <ul>
+                        <li>position: fixed;</li>
+                    </ul>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element fixed">position: fixed;</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

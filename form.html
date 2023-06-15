@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form + JQuery</title>
+    <link rel="stylesheet" href="assets/css/bootstap.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="custom-form">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"  placeholder="Введите имя" value="Rost">
+                </div>
+                <div class="col-md-6">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"  placeholder="Введите фамилию" value="Suslov"></div>
+                <div class="col-md-6">
+                    <label for="tel">tel:</label>
+
+
+
+                    <input class="phone" type="tel" id="tel" name="tel" placeholder="+38(000)-00-00-000">
+                
+                
+                
+                
+                
+
+
+
+
+                </div>
+                <div class="col-md-6">
+                    <label for="password">password:</label>
+                    <input type="password" id="password" name="password"   placeholder="Введите пароль">
+                    <div class="show-hide"></div>
+                </div>
+
+
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+
+               
+
+
+
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+
+        <form>
+            <input type="search">
+            <br>
+            <br>
+            <input type="range">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <input type="password">
+            <br>
+            <input type="color">
+            <br>
+            <input type="file">
+            <br>
+            <br>
+            <br>
+
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+
+
+            <br><br><br>
+
+
+
+
+
+
+
+            <input type="radio" id="cat" name="fav_pets" value="cat">
+            <label for="cat">Кот</label><br>
+
+            <input type="radio" id="dog" name="fav_pets" value="dog">
+            <label for="dog">Сабака</label><br>
+
+            <input type="radio" id="tiger" name="fav_pets" value="tiger">
+            <label for="tiger">Тигр</label>
+            <br></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label>
+            <br>
+
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label>
+            <br>
+
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+            <input type="checkbox" id="enim-cat" name="enim" value="cat">
+            <label for="enim-cat"> I have a cat</label>
+            <br>
+
+            <input type="checkbox" id="enim-dog" name="enim" value="dog">
+            <label for="enim-dog"> I have a dog</label>
+            <br>
+
+            <input type="checkbox" id="enim-tiger" name="enim" value="tiger">
+            <label for="enim-tiger"> I have a tiger</label>
+            <br>
+
+
+
+
+
+            <br><br>
+            <label for="lname">Last name:</label>
+            <br>
+            <input type="text" id="lname" name="lname">
+
+            <br><br>
+            <textarea name="test" id="test" minlength="5" maxlength="500" cols="30" rows="5"   placeholder="Введите свой отзыв"></textarea>
+
+            <br><br>
+            <input type="submit">
+        </form>
+    </div>
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
